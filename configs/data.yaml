@@ -1,0 +1,28 @@
+# data.yaml
+# Vision-Guided Robotic Arm – YOLOv8 Dataset Configuration
+#
+# Directory layout expected:
+#   datasets/augmented/
+#     ├── images/
+#     │     ├── train/
+#     │     ├── val/
+#     │     └── test/        (optional)
+#     └── labels/
+#           ├── train/
+#           ├── val/
+#           └── test/        (optional)
+#
+# Adjust the paths below to match your dataset location.
+
+path: ../datasets/augmented   # dataset root (relative to this file)
+train: images/train
+val: images/val
+test: images/test             # optional
+
+# Number of classes
+nc: 2
+
+# Class names (index order must match annotation class_id)
+names:
+  0: Metal-Object
+  1: Tray
